@@ -42851,8 +42851,7 @@ var SendWebsocket = function SendWebsocket(props) {
     console.log(animationData); // console.log(animationData);
     // props.websocket.send(animationData);
 
-    var url = window.location.hostname;
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("".concat(url, "/send"), animationData).then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/send", animationData).then(function (response) {
       console.log(response.data);
     }).catch(function (error) {
       console.log(error);
